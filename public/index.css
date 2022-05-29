@@ -1,0 +1,55 @@
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.main-heading {
+    text-align: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.main-text {
+    font-size: 0.875rem;
+}
+
+.flex-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15%;
+}
+
+.task-text {
+    width: 20%;
+}
+
+.button-group {
+    width: 40%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-form {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    width: 100%;
+}
+
+.flex-item-input {
+    width: 60%;
+}
+
+.flex-item-button {
+    width: 35%;
+}

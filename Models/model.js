@@ -9,9 +9,6 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
-/* テスト */
-
-// client.query("SELECT * FROM tasks").then((res) => console.log(res))
 
 /* クエリ文の定義 */
 
@@ -27,21 +24,6 @@ const createTask = `INSERT INTO tasks(task, complete_flag) VALUES($1, $2)`
 /* 完了フラグを更新する */
 const changeFlag = `UPDATE tasks SET complete_flag = $1 WHERE id = $2`
 
-/* タスクの取得 */
-// const getTasks = async() => {
-//     await client.connect();
-//     const query = {
-//         text: "SELECT * FROM tasks",
-//     };
-//     client.query(query)
-//       .then((res) => { 
-//         console.log(res.rows[0]);
-//         response = res.rows
-//         client.end()
-//         return response
-//       })
-//       .catch((e) => console.error(e.stack))
-// }
 
 module.exports = {
   pool: pool,

@@ -1,4 +1,4 @@
-# todo-node
+# todo-nodeアプリについて
 
 ## 動かし方
 
